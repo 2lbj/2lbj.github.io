@@ -1,6 +1,0 @@
-[submodule "docs/themes/simpleIntro"]
-	path = docs/themes/simpleIntro
-	url = https://github.com/qub1750ul/hugo-simpleIntro
-[submodule "docs/themes/coming-soon"]
-	path = docs/themes/coming-soon
-	url = https://github.com/mansoorbarri/coming-soon.git

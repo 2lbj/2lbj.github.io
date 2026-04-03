@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <link rel="canonical" href="{{ .Permalink }}">
+    {{ with .Site.Params.favicon }}
+        <link rel="icon" type="image/x-icon" href="{{ . }}">
+    {{ else }}
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    {{ end }}
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+    <div class="bgimg">
+        <video autoplay muted loop poster="poster.jpg">
+            {{ with .Site.Params.background }}
+                <source src="{{ . }}" type="video/mp4">
+            {{ else }}
+                <source src="bg.mp4" type="video/mp4">
+            {{ end }}
+        </video>
+        <div class="topleft">
+            {{ with .Site.Params.title }}
+                <p>{{ . }}</p>
+            {{ else }}
+                <p>{{ .Site.Title }}</p>
+            {{ end }}
+        </div>
+        <div class="middle">
+            {{ with .Site.Params.message }}
+                <h1>{{ . }}</h1>
+            {{ else }}
+                <h1>COMING SOON</h1>
+            {{ end }}
+            <hr>
+            <p id="demo"></p>
+            <div id="countdown" data-release="{{ .Site.Params.release }}"></div>
+        </div>
+        <div class="bottomleft">
+            <p>
+            {{ with .Site.Params.description }}{{ . }}{{ end }}</p>
+        </div>
+    </div>
+    <div class="left">
+        {{ with .Site.Params.social }}
+        <div class="social-icons">
+            <ul class="social-icons-list">
+            {{ range . }}
+                <li class="social-icon">
+                    <a href="{{ .url }}" target="_blank">{{ .name }}</a>
+                </li>
+            {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+    </div>
+        <script src="/js/script.js"></script>
+
+</html>

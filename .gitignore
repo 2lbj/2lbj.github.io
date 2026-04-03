@@ -3,3 +3,9 @@
 *.iws
 *.iml
 *.ipr
+
+### Hugo ###
+.hugo_build.lock
+
+### macOS ###
+.DS_Store

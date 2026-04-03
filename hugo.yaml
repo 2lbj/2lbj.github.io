@@ -1,14 +1,268 @@
-#baseURL: 'https://example.org/'
-publishDir: 'docs'
 baseURL: 'https://2lbj.github.io/'
-languageCode: 'en-us'
+publishDir: 'docs'
 title: 'hexLi 李婶儿'
+theme: hugo-theme-next
+defaultContentLanguage: zh-cn
+languageCode: zh-CN
+hasCJKLanguage: true
+enableEmoji: true
+enableRobotsTXT: true
 
-theme: "coming-soon"
-  
+pagination:
+  pagerSize: 10
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+
+sitemap:
+  filename: "sitemap.xml"
+  changefreq: "weekly"
+  priority: 0.5
+
+outputFormats:
+  RSS:
+    baseName: "rss"
+  LocalIndexes:
+    mediaType: application/xml
+    baseName: searchindexes
+    isPlainText: true
+    notAlternative: true
+
+outputs:
+  home: ["HTML", "RSS", "LocalIndexes"]
+
+taxonomies:
+  tag: tags
+  category: categories
+
+menus:
+  main:
+    - identifier: home
+      name: 首页
+      pageRef: /
+      pre: home
+      weight: 1
+    - identifier: archives
+      name: 归档
+      pageRef: /archives
+      pre: archive
+      weight: 2
+
+languages:
+  zh-cn:
+    languageCode: zh-CN
+    languageName: "简体中文"
+    weight: 1
+
 params:
-  title: 'hexLi 李婶儿'
-  description: "$>_"
-  message: "COMING SOON!" # default is "COMING SOON" 
-  release: "May 01, 2026" # release date format: Aug 30, 2023 15:00
-  background: "" # default is bg.mp4 in static/
+  mainSections: ["posts"]
+  yearFormat: "2006"
+  monthFormat: "01-02"
+  dateFormat: "2006-01-02"
+  timeFormat: "2006-01-02 15:04:05 -07:00"
+
+  scheme: Gemini
+  darkmode: true
+
+  author: 2lbj
+  subtitle: "$>_"
+  description: "hexLi 李婶儿的个人博客"
+  keywords: Hugo,NexT,blog
+
+  favicon:
+    icon: /imgs/icons/favicon.ico
+    small: /imgs/icons/favicon_16x16_next.png
+    medium: /imgs/icons/favicon_32x32_next.png
+    appleTouchIcon: /imgs/icons/apple_touch_icon_next.png
+
+  creativeCommons:
+    license: by-nc-sa
+    size: small
+    sidebar: false
+    post: true
+    byai: false
+    notByAiIconColor: "white"
+
+  menuSets:
+    icons: true
+    transition: true
+    badges: true
+
+  sidebar:
+    position: left
+    width: 256
+    display: post
+    padding: 18
+    offset: 12
+
+  avatar:
+    url: /imgs/avatar.png
+    rounded: true
+    rotated: true
+
+  siteState:
+    basic: true
+    views:
+      enable: false
+
+  socialIcons:
+    enable: true
+    iconsOnly: false
+    transition: true
+
+  linksSets:
+    icon: fa fa-globe
+    title: 友情链接
+    layout: inline
+
+  toc:
+    enable: true
+    number: true
+    wrap: false
+    expandAll: false
+    maxDepth: 3
+
+  footer:
+    since: 2016
+    icon:
+      name: fa fa-heart
+      animated: true
+      color: "#ff0000"
+    powered: true
+    beian:
+      enable: false
+
+  postMeta:
+    itemText: true
+    created: true
+    updated:
+      enable: true
+      anotherDay: true
+    categories: true
+    wordCount: true
+    readTime: true
+    comments:
+      enable: false
+    views:
+      enable: false
+    expired: false
+    summary: true
+
+  postFooter:
+    endLineTip: "~ The End ~"
+    tagIcon: true
+
+  rewardSets:
+    enable: false
+    animation: false
+
+  share:
+    enable: false
+
+  textAlign:
+    desktop: justify
+    mobile: justify
+
+  mobileLayoutEconomy: true
+
+  themeColor:
+    light: "#222"
+    dark: "#222"
+
+  bodyScrollbar:
+    overlay: false
+    stable: true
+
+  codeblock:
+    style: mac
+    copyBtn: true
+    maxHeight: 200
+
+  backTop:
+    enable: true
+    sidebar: false
+    scrollpercent: true
+
+  readingProgress:
+    enable: true
+    start: left
+    position: top
+    reversed: false
+    color: "#37c6c0"
+    height: 3px
+
+  bookmark:
+    enable: true
+    color: "#222"
+    save: manual
+
+  githubBanner:
+    enable: false
+
+  font:
+    enable: false
+
+  exturl:
+    enable: true
+    icon: true
+
+  motion:
+    enable: true
+    async: true
+    transition:
+      postBlock: fadeIn
+      postHeader: fadeInDown
+      postBody: fadeInDown
+      collHeader: slideInRight
+      sidebar: fadeInUp
+
+  note:
+    style: simple
+    icons: true
+    lightBgOffset: 0
+
+  tabs:
+    sticky: false
+    transition:
+      tabs: false
+      labels: true
+
+  pdf:
+    enable: false
+    height: 500px
+
+  localSearch:
+    enable: true
+    path: /searchindexes.xml
+    trigger: auto
+    topNPerArticle: -1
+    unescape: false
+    preload: false
+
+  algoliaSearch:
+    enable: false
+
+  comments:
+    enable: false
+
+  gitter:
+    enable: false
+
+  postEdit:
+    enable: false
+
+  vendors:
+    internal: local
+    plugins: local

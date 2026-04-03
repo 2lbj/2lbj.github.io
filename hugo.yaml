@@ -10,5 +10,5 @@ params:
   title: 'hexLi 李婶儿'
   description: "$>_"
   message: "COMING SOON!" # default is "COMING SOON" 
-  release: "12 01, 2023" # release date format: Aug 30, 2023 15:00
+  release: "May 01, 2026" # release date format: Aug 30, 2023 15:00
   background: "" # default is bg.mp4 in static/

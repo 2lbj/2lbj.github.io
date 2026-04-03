@@ -1,0 +1,36 @@
+
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<search>
+  
+  <entry>
+    <title>Hello World</title>
+    <url>/posts/hello-world/</url>
+    <categories>
+      <category>日志</category>
+    </categories>
+    <tags>
+      
+      <tag>hexo</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[  Welcome to my blog! This is the very first post.
+Quick Start Create a new post 1 $ hexo new &#34;My New Post&#34; Run server 1 $ hexo server Generate static files 1 $ hexo generate Deploy to remote sites 1 $ hexo deploy   ]]></content>
+  </entry>
+  
+  <entry>
+    <title>初始化工程</title>
+    <url>/posts/init-project/</url>
+    <categories>
+      <category>日志</category>
+    </categories>
+    <tags>
+      
+      <tag>站点</tag>
+      
+    </tags>
+    <content type="html"><![CDATA[   All Camp objects, and persons, contain a large element of artifice. Nothing in nature can be campy.
+站点初始化完成。
+  ]]></content>
+  </entry>
+  
+</search>

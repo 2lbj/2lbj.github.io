@@ -2,47 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://2lbj.github.io/categories/</loc>
     <lastmod>2016-05-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/hello-world/</loc>
+    <loc>https://2lbj.github.io/posts/hello-world/</loc>
     <lastmod>2016-05-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://2lbj.github.io/</loc>
     <lastmod>2016-05-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/hexo/</loc>
+    <loc>https://2lbj.github.io/tags/hexo/</loc>
     <lastmod>2016-05-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://2lbj.github.io/posts/</loc>
     <lastmod>2016-05-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://2lbj.github.io/tags/</loc>
     <lastmod>2016-05-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/init-project/</loc>
+    <loc>https://2lbj.github.io/posts/init-project/</loc>
     <lastmod>2016-05-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/%E6%97%A5%E5%BF%97/</loc>
+    <loc>https://2lbj.github.io/categories/%E6%97%A5%E5%BF%97/</loc>
     <lastmod>2016-05-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/%E7%AB%99%E7%82%B9/</loc>
+    <loc>https://2lbj.github.io/tags/%E7%AB%99%E7%82%B9/</loc>
     <lastmod>2016-05-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
